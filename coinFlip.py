@@ -15,10 +15,10 @@ def coinFlips():
         heads, tails, timesflipped = 0, 0, 0
 
         # getting the number of flips from user
-        numberFlipped = int(input('How many time do you want to flip?'))
+        numberFlipped = int(input('How many time do you want to flip? '))
 
         # getting the number of guess for heads
-        guessHeads = int(input("How many times do you think it will land heads?"))
+        guessHeads = int(input("How many times do you think it will land heads? "))
 
         # a while loop to get the number of random 0 or 1s
         while timesflipped < numberFlipped:
@@ -45,7 +45,7 @@ def coinFlips():
 
         replay = input('Would you like to play again? Y or N  ')
 
-        if replay == y and Y and Yes and YES:
+        if replay == 'y' or replay == 'Y' or replay == 'Yes' or replay == 'YES':
             coinFlips()
 
     # value error handler incase user puts in anthing other than a number
