@@ -43,8 +43,10 @@ def coinFlips():
         print("In " + str(numberFlipped) + " flips, " + str(heads) + " were heads and " + str(tails) + " were tails.")
         print("Your guess was " + str(guessHeads) + " times that heads would appear")
 
+        # added a replay feature
         replay = input('Would you like to play again? Y or N  ')
 
+        # if statement to open the coinFlip again if these are entered
         if replay == 'y' or replay == 'Y' or replay == 'Yes' or replay == 'YES':
             coinFlips()
 
@@ -53,4 +55,5 @@ def coinFlips():
         print("Must be a number")
         coinFlips()
 
+# calling the program at the end of the python so that it checks the program first
 coinFlips()
